@@ -1,0 +1,11 @@
+# Node
+node_modules/
+.env
+
+# Build
+client/build/
+admin/build/
+
+# OS
+.DS_Store
+Thumbs.db

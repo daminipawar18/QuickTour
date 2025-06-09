@@ -1,0 +1,63 @@
+.booking-confirmation {
+    text-align: center; /* Centers text content */
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  h3, p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  /* Arrange buttons vertically */
+  .button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons one below the other */
+    align-items: center; /* Center buttons horizontally */
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 15px; /* Slightly bigger buttons */
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Make buttons wider */
+    max-width: 300px; /* Limit button width */
+    gap: 5px;
+  }
+  
+  button svg {
+    font-size: 14px;
+  }
+  
+  .call-driver-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .chat-driver-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .cancel-ride-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  /* Copyright text styling */
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+  }
+  

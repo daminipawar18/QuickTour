@@ -1,0 +1,134 @@
+
+
+.reports-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Ensure container fits the screen */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.reports-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.report-filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.report-type-select,
+.date-input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* 100% width for smaller screens */
+  max-width: 150px; /* Set a max-width for larger screens */
+  margin-bottom: 10px;
+}
+
+.generate-button {
+  padding: 15px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Ensure it fits smaller screens */
+  max-width: 130px; /* Set a max-width */
+  margin-bottom: 10px;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+.chart-container {
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensure chart fits the screen */
+}
+
+.reports-table-container {
+  max-width: 100%;
+  overflow-x: auto; /* Only enable scrolling if necessary */
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #acaaaa;
+}
+
+.reports-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.reports-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.view-button,
+.download-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Make buttons responsive */
+  max-width: 120px; /* Set max-width for larger screens */
+  margin-bottom: 5px; /* Add margin between buttons */
+}
+
+.view-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.download-button {
+  background-color: #28a745;
+  color: white;
+  margin-left: 5px;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .report-filters {
+    flex-direction: column; /* Stack form inputs vertically on small screens */
+    overflow-x: hidden;
+  }
+
+  .report-type-select,
+  .date-input,
+  .generate-button {
+    width: 100%; /* Full width on small screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .view-button,
+  .download-button {
+    width: 100%; /* Full width on small screens */
+  }
+}

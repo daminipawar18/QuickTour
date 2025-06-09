@@ -1,0 +1,16 @@
+import axios from 'axios';
+import api from '../components/api';
+
+
+const API_URL = 'http://rideshare.ap-south-1.elasticbeanstalk.com/api/rides';
+
+const RideService = {
+    getRides: () => {
+        return axios.get(API_URL);
+    },
+    offerRide: (ride) => {
+        return axios.post(API_URL, ride);
+    }
+};
+
+export default RideService;

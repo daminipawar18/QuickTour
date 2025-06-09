@@ -1,0 +1,97 @@
+/* Main container */
+.reviews-management {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .reviews-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Reviews Container */
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual Review Card */
+  .review-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* User Name */
+  .review-user {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  /* Review Text */
+  .review-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background: #cc0000;
+  }
+  
+  /* No Reviews Message */
+  .no-reviews {
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .reviews-management {
+      max-width: 90%;
+    }
+  
+    .review-card {
+      padding: 12px;
+    }
+  
+    .delete-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  

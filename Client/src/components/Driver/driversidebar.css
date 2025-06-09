@@ -1,0 +1,68 @@
+.sidebar {
+    width: 250px;
+    background: #2C3E50; /* Dark sidebar background */
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all sidebar content */
+}
+
+/* Sidebar Title - "Driver Panel" */
+.sidebar h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 22px; /* Slightly larger than other text */
+    font-weight: bold;
+    text-align: center; /* Ensures it stays centered */
+    margin-bottom: 30px;
+}
+
+/* Sidebar List */
+.sidebar ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+  
+    margin: 8px 0;
+    text-align: center; /* Ensures all items are centered */
+}
+
+.sidebar a {
+    color: white !important;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    font-size: 18px; /* Regular text size */
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+/* Logout Button Styling */
+.logout-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px; /* Same as sidebar links */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    text-align: center; /* Center the text */
+    display: block; /* Make it behave like a sidebar link */
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
