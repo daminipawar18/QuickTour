@@ -5,16 +5,18 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+
 import Login from "./Components/Login";
-import User from "./components/User";
-import RideMonitoring from "./components/RideMonitoring";
-import Reports from "./components/Reports";
-import Dashboard from "./components/Dashboard";
-import Sidebar from "./components/Sidebar";
-import DriverManagement from "./Components/drivermanagement";
-import NotificationCenter from "./components/NotificationCenter"; // ✅ Updated Import
+import User from "./Components/User";
+import RideMonitoring from "./Components/RideMonitoring";
+import Reports from "./Components/Reports";
+import Dashboard from "./Components/Dashboard";
+import Sidebar from "./Components/Sidebar";
+import DriverManagement from "./Components/DriverManagement";
+import NotificationCenter from "./Components/NotificationCenter";
 import ReviewsManagement from "./Components/ReviewsManagement";
 import PaymentManagement from "./Components/PaymentManagement";
+
 import AuthContextProvider, { AuthContext } from "./contexts/AuthContext";
 import "./App.css";
 
@@ -43,8 +45,6 @@ const App = () => {
               path="/reports"
               element={isAuthenticated ? <Reports /> : <Navigate to="/" />}
             />
-           
-            
             <Route
               path="/dashboard"
               element={isAuthenticated ? <Dashboard /> : <Navigate to="/" />}
@@ -53,7 +53,6 @@ const App = () => {
               path="/drivermanagement"
               element={isAuthenticated ? <DriverManagement /> : <Navigate to="/" />}
             />
-            {/* ✅ New Routes */}
             <Route
               path="/payment"
               element={isAuthenticated ? <PaymentManagement /> : <Navigate to="/" />}
