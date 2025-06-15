@@ -1,7 +1,7 @@
 // src/contexts/AuthContext.jsx
 import React, { createContext, useState } from "react";
-import Dashboard from "../components/Dashboard"; // Use correct path based on your structure
-import Login from "../components/Login"; // Same here
+import Dashboard from "../Components/Dashboard"; // ✅ Capital "C"
+import Login from "../Components/Login";         // ✅ Capital "C"
 
 export const AuthContext = createContext();
 
